@@ -77,7 +77,7 @@ func (p *userRepo) Register(data *dto.RegisterReqDTO) (resp *dto.RegisterRespDTO
 
 	tx, err := p.Connection.Beginx()
 	if err != nil {
-		log.Println("Failed Begin Tx Register  : ", err.Error())
+		log.Println("Failed Begin Tx Register: ", err.Error())
 		return nil, err
 	}
 
